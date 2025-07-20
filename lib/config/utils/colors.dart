@@ -12,10 +12,12 @@ class MyColors {
   static const Color grey = Color(0xffE0E0E0);
   static const Color greyLight = Color(0xffe0e0e0);
   static const Color greyDark = Color(0xff616161);
+  static const Color shadow = Color(0x25000000);
 
   // Surface Colors & Neutral Colors
-  static const Color background = Color(0xffF5F5FF);
-  static const Color forground = Color(0xffF5F5F5);
+  static const Color background = Color(0xffF5F5F5);
+  static const Color forground = Color(0xffF5F5FF);
+  static const Color transparent = Color(0x00FFFFFF);
 
   // Text Colors
   static const Color textDark = Color(0xff525252);
@@ -26,4 +28,5 @@ class MyColors {
   static const Color warningYellow = Color(0xffffc107); // Amber
   static const Color errorRed = Color(0xfff44336); // Red
   static const Color infoBlue = Color(0xff2196f3); // Blue
+  static const Color test = Color.fromARGB(255, 190, 11, 112); // Blue
 }

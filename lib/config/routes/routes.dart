@@ -4,6 +4,6 @@ import 'routes_name.dart';
 
 class MyRoutes {
   static appRoutes() => [
-    GetPage(name: RouteName.ts, page: () => Ts()),
+    GetPage(name: MyRouteName.ts, page: () => Ts()),
   ];
 }

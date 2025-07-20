@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'config/config_io.dart';
-import 'ts.dart';
+import 'view/moduls.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
-      statusBarColor: Color(0xFFFFC107),
+      statusBarColor: MyColors.secondary,
       statusBarBrightness: Brightness.light,
     ),
   );
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
+        colorScheme: ColorScheme.fromSeed(seedColor: MyColors.primary),
       ),
       getPages: MyRoutes.appRoutes(),
 
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         splashTransition: SplashTransition.fadeTransition,
         centered: true,
         splash: Image.asset(MyImages.appLogo, fit: BoxFit.contain, width: 360,),
-        nextScreen: Ts(),
+        nextScreen: Modules(),
       ),
     );
   }
