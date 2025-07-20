@@ -22,22 +22,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
       ),
-      getPages: AppRoutes.appRoutes(),
+      getPages: MyRoutes.appRoutes(),
 
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
       home: AnimatedSplashScreen(
         duration: 2000,
         splashTransition: SplashTransition.fadeTransition,
         centered: true,
-        splash: Image.asset(
-          'assets/png/app_logo.png',
-          fit: BoxFit.contain,
-          height: 500,
-        ),
+        splash: Image.asset(MyImages.appLogo, fit: BoxFit.contain, width: 360,),
         nextScreen: Ts(),
       ),
     );

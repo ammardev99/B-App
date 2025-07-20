@@ -5,6 +5,17 @@ class Ts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Image.asset('assets/png/app_logo.png',),
+            Text("data"),
+          ],
+        ),
+      ),
+    );
   }
 }
